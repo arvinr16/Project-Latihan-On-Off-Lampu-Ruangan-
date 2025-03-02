@@ -1,0 +1,107 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container-navbar {
+  background-color: rgb(24, 59, 75);
+  width: 100%;
+  height: 100px;
+}
+
+.ul-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.li-navbar {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out 0.2s;
+}
+
+.li-navbar:hover {
+  background-color: rgb(198, 187, 28);
+  border-radius: 100px;
+}
+
+.a-navbar {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 27px;
+}
+
+.container-footer {
+  background-color: rgb(24, 59, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Responsif untuk tablet atau layar di bawah 768px */
+@media (max-width: 768px) {
+  .container-navbar {
+    height: 80px;
+  }
+
+  .ul-navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .li-navbar {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .a-navbar {
+    font-size: 20px;
+  }
+
+  .container-footer {
+    font-size: 30px;
+  }
+}
+
+/* Responsif untuk layar kecil di bawah 480px */
+@media (max-width: 480px) {
+  .container-navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .ul-navbar {
+    flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+  }
+
+  .li-navbar {
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .a-navbar {
+    font-size: 18px;
+  }
+
+  .container-footer {
+    font-size: 24px;
+    padding: 5px;
+  }
+}
